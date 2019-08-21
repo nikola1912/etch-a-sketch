@@ -11,11 +11,149 @@
     
     <div id="main">
 
+        <div id="hud">
+            <button class="btn" id="new">NEW</button>
+            <button class="btn" id="clear">CLEAR</button>
+            <button class="btn" id="color">COLOR</button>
+            <button class="btn" id="random">RANDOM</button>
+            <button class="btn" id="eraser">ERASER</button>
+        </div>
+
         <div id="container">
             
         </div>
 
     </div>
+
+    <div id="newGridBox">
+        <div id="newGridContent">
+
+            <form>
+                <label class="newGridLabels" for="numOfRows">
+                    <h3>How many rows and columns?</h3>
+                </label>
+                <input class="newGridInputs" id="numOfRows" type="number" min="1" max="200" placeholder="" name="numOfRows" required>
+                <br>
+                <input class="btn newBtn" type="button" id="cancel" value="CANCEL">
+                <input class="btn newBtn" type="button" id="ok" value="OK">
+            </form>
+
+            <div>
+                <p id="inputAlert">Enter a number between 1 and 200</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="colorSelectorContainer">
+        <div id="colorSelector">
+
+            <div id="presets">
+
+                <div>
+                    <input type="radio" id="black" name="color" value="#000000">
+                    <label for="black">
+                        <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="red" name="color" value="#c41400">
+                    <label for="red">
+                        <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="yellow" name="color" value="#ffcc00">
+                    <label for="yellow">
+                        <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="green" name="color" value="#02ad49">
+                    <label for="green">
+                        <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="blue" name="color" value="#0a86da">
+                    <label for="blue">
+                        <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="purple" name="color" value="#ac15e7">
+                    <label for="purple">
+                        <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="pink" name="color" value="#ff4fb0">
+                    <label for="pink">
+                        <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="orange" name="color" value="#ff8800">
+                    <label for="orange">
+                        <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="grey" name="color" value="#7a7b83">
+                    <label for="grey">
+                        <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="watevs" name="color" value="#00ffaa">
+                    <label for="watevs">
+                        <span>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                        </span>
+                    </label>
+                </div>
+
+            </div>
+
+            <div id="custom">
+                <label for="customSelector"><h4>CUSTOM COLOR:</h4></label>
+                <input id="customSelector" type="color" name="customSelector">
+            </div>
+
+            <input class="btn newBtn newNewBtn" type="button" id="cancel2" value="CANCEL">
+            <input class="btn newBtn newNewBtn" type="button" id="ok2" value="OK">
+
+        </div>
+    </div>
+    
+
 
     <script src="app.js"></script>
 </body>
